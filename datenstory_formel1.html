@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Die Evolution der Formel 1: Triumph und Technologie</title>
+    
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6; 
+            margin: 0; 
+            padding: 0; 
+        }
+        .container {
+            width: 80%; 
+            margin: auto; 
+            overflow: hidden; 
+            position: relative; 
+            z-index: 2;
+        }
+        .topic-section {
+            padding: 50px 20px; 
+            color: white;
+            background-size: cover;
+            background-position: center;
+        }
+        .early-years {
+            background-image: url('early_years.jpg'); /* Replace with the path to your image */
+        }
+        .global-expansion {
+            background-image: url('global_expansion.jpg'); /* Replace with the path to your image */
+        }
+        .dominant-teams {
+            background-image: url('dominant_teams.jpg'); /* Replace with the path to your image */
+        }
+        .section-wrapper {
+            position: relative;
+            min-height: 400px;
+            overflow: hidden;
+        }
+        footer { 
+            background: #333; 
+            color: #fff; 
+            text-align: center; 
+            padding: 20px 0; 
+        }
+        footer ul { 
+            list-style-type: none; 
+            padding: 0; 
+        }
+        footer li { 
+            margin: 5px 0; 
+        }
+        footer a { 
+            color: #fff; 
+            text-decoration: none; 
+        }
+    </style>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var plotlyDiv = document.getElementById('plotly-div');
+            var frames = [];
+            function animatePlot() {
+                Plotly.animate(plotlyDiv, frames.map(f => f.name), {
+                    transition: {duration: 500},
+                    frame: {duration: 2000, redraw: true},
+                    mode: 'immediate'
+                });
+            }
+            plotlyDiv.on('plotly_animated', animatePlot);
+            plotlyDiv.on('plotly_sliderchange', function(e){
+                console.log(e.step.label);
+            });
+            animatePlot();
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Die Evolution der Formel 1 – Von den 1950er Jahren bis heute</h1>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h2>Wie alles begann</h2>
+        <p>Die Formel 1 ist seit ihrer Gründung im Jahr 1950 eine der aufregendsten und prestigeträchtigsten Motorsportarten der Welt. Sie vereint unglaubliche Geschwindigkeiten, technische Präzision und den unermüdlichen Kampfgeist der besten Fahrer. Jedes Rennen bietet Nervenkitzel und Spannung, wenn die besten Teams und Fahrer der Welt um die Spitze kämpfen. Dramatische Situationen, von atemberaubenden Überholmanövern bis hin zu haarsträubenden Unfällen, sind an der Tagesordnung und halten die Fans in Atem. Diese Mischung aus Geschwindigkeit, Risiko und technologischer Exzellenz macht die Formel 1 zu einem unvergleichlichen Spektakel.</p>
+
+        
+        <h3>Die frühen Jahre: Ein aufregender, aber unsicherer Sport</h3>
+        <p>In den Anfangsjahren der Formel 1 war die Spannung auf der Strecke unübertroffen, doch die Sicherheitsstandards ließen zu wünschen übrig. Die Fahrzeuge waren rudimentär und die Sicherheitsausrüstung beschränkte sich auf einfache Helme und Gurtzeuge. Rennstrecken hatten kaum Barrieren, was zu zahlreichen tödlichen Unfällen führte. Diese gefährlichen Bedingungen verdeutlichten die dringende Notwendigkeit für verbesserte Sicherheitsmaßnahmen.</p>
+        <div style="text-align: left;">
+        <iframe src="f1_driver_deaths_per_year.html" width="1300" height="600"></iframe>
+        </div>
+        <p>Wie in der Grafik "Anzahl Todesfälle von F1-Fahrer pro Jahr" ersichtlich ist, gab es in den 1950er und 1960er Jahren eine erhebliche Anzahl an Todesfällen. Wichtige Sicherheitsmaßnahmen wie die Einführung von Helmen (1952) und feuerfesten Rennoveralls (1975) wurden als Reaktion auf diese Unfälle eingeführt.</p>
+        <h3>1950er Jahre: Erste Sicherheitsmaßnahmen</h3>
+        <p>In den 1950er Jahren begann die Formel 1, erste Schritte zur Verbesserung der Sicherheit zu unternehmen. 1952 wurde das Tragen von Helmen zur Pflicht. Diese Maßnahme wurde als Reaktion auf die zahlreichen Kopfverletzungen eingeführt, die Fahrer bei Unfällen erlitten. 1959 wurden Überrollbügel vorgeschrieben, um die Fahrer bei Überschlägen zu schützen. Trotz dieser Maßnahmen blieb die Formel 1 ein gefährlicher Sport, bei dem viele Fahrer ihr Leben verloren.</p>
+        <h3>1960er und 1970er Jahre: Weiterführende Sicherheitsreformen</h3>
+        <p>Die 1960er Jahre sahen weitere Fortschritte in der Sicherheit, als sicherere Cockpits und feuerfeste Anzüge eingeführt wurden. Die Einführung feuerfester Anzüge im Jahr 1975 war eine direkte Reaktion auf mehrere Vorfälle, bei denen Fahrer bei Unfällen schwere Verbrennungen erlitten. Diese Maßnahmen waren entscheidend, um das Risiko schwerer Verletzungen und Todesfälle zu verringern.</p>
+        <h3>1980er Jahre: Technologische Innovationen und Sicherheitsstandards</h3>
+        <p>In den 1980er Jahren revolutionierte die Einführung des Kohlefaser-Monocoques die Sicherheitsstandards in der Formel 1. Dieses Material ist extrem stark und leicht, was dazu beiträgt, die Aufprallkräfte bei Unfällen zu absorbieren und die Überlebenschancen der Fahrer zu verbessern. Diese Entwicklung war eine Reaktion auf die hohen Geschwindigkeiten und die intensiveren Wettbewerbe, die höhere Sicherheitsanforderungen erforderten. Zudem wurden Crashtests für Formel-1-Fahrzeuge eingeführt, um sicherzustellen, dass die Autos den enormen Aufprallkräften standhalten können.</p>
+        <h3>1990er Jahre: Ein Jahrzehnt der Sicherheitsrevolution</h3>
+        <p>Ein Wendepunkt in der Sicherheitsgeschichte der Formel 1 war der tragische Tod von Ayrton Senna und Roland Ratzenberger während des Grand Prix von San Marino 1994. Diese Tragödien führten zur Einführung des HANS-Systems (Head and Neck Support), das Kopf- und Nackenverletzungen verhindern soll. Die FIA führte umfassende Änderungen an den Strecken und Fahrzeugen durch, um die Sicherheit weiter zu erhöhen. Dies umfasste unter anderem höhere Cockpitwände, bessere Crash-Strukturen und strengere Crashtest-Anforderungen.</p>
+        <h3>2000er Jahre: Weiterentwicklung der Sicherheitsstandards und technologische Innovationen</h3>
+        <p>In den 2000er Jahren wurden die Sicherheitsmaßnahmen weiter verfeinert. Das HANS-System wurde 2003 verpflichtend, und die Helme der Fahrer wurden weiter verbessert. Strenge Vorschriften für die Konstruktion der Autos, darunter die Verwendung von hochfesten Materialien wie Kohlefaser und Kevlar, trugen dazu bei, das Verletzungsrisiko zu minimieren. Die Einführung des Halo-Systems im Jahr 2018, einem Titanrahmen über dem Cockpit, war ein weiterer bedeutender Schritt zur Erhöhung der Sicherheit.</p>
+        <h3>2010er Jahre: Dominanz von Mercedes und die Rolle der Budgets</h3>
+        <p>In den 2010er Jahren begann Mercedes, die Formel 1 zu dominieren. Diese Dominanz war nicht nur auf technologische Überlegenheit zurückzuführen, sondern auch auf die enormen finanziellen Ressourcen des Teams. Dank ihrer finanziellen Stärke konnte Mercedes kontinuierlich in neue Technologien und Entwicklungen investieren, was ihnen einen klaren Wettbewerbsvorteil verschaffte.</p>
+        <p>Die Einführung der Budgetobergrenze im Jahr 2021 in der Formel 1 war ein notwendiger Schritt, um der Eskalation der Teambudgets entgegenzuwirken. In den letzten Jahrzehnten stiegen die Budgets erheblich an, was zur Dominanz von Teams wie Mercedes, Ferrari und Red Bull führte. Diese drei Teams konnten aufgrund ihrer enormen finanziellen Ressourcen kontinuierlich in neue Technologien und Entwicklungen investieren, was ihnen einen Wettbewerbsvorteil verschaffte.</p>
+        <p>Kleinere Teams, die nicht über ähnliche finanzielle Mittel verfügten, hatten Schwierigkeiten, mit den Top-Teams mitzuhalten. Dies führte zu einer wachsenden Kluft zwischen den reichen und den weniger gut ausgestatteten Teams. Selbst Teams mit effizienten Betriebsmodellen, wie Force India, konnten trotz guter Leistung und cleverem Management nicht mit der finanziellen Schlagkraft der großen Teams konkurrieren.</p>
+        <p>Die Einführung der Budgetobergrenze zielt darauf ab, die Kosten zu kontrollieren und den Wettbewerb in der Formel 1 zu verbessern. Es soll dafür sorgen, dass finanzielle Ressourcen nicht der einzige entscheidende Faktor für den Erfolg eines Teams sind, sondern dass auch technisches Können und strategisches Geschick eine größere Rolle spielen können.</p>
+        <p>Diese Maßnahme soll langfristig zu einem ausgeglicheneren und spannenderen Wettkampf führen, bei dem mehr Teams die Chance haben, um Siege und Titel zu kämpfen, was letztlich sowohl den Sport als auch die Fans profitieren lässt.</p>
+        <div style="text-align: center;">
+            <img src="f1_team_budgets.png" alt="Entwicklung der Teambudgets in der Formel 1">
+        </div>
+        <p>Die Grafik zeigt die Veränderung der Budgets des Teams Jordan (später Midland, Spyker und Force India) in der Formel 1 von 1993 bis 2016. Der Chart verdeutlicht einen signifikanten Anstieg der Budgets über die Jahre hinweg.</p>
+
+        <h2>Kommerzialisierung und globale Expansion der Formel 1</h2>
+        <p>Parallel zu den finanziellen Entwicklungen hat sich die Formel 1 weltweit ausgebreitet. Anfangs war die Mehrheit der Rennen auf Europa beschränkt, doch mit zunehmender Popularität begannen die Rennen auch andere Kontinente zu erreichen. Heute finden Formel-1-Rennen auf der ganzen Welt statt, was die globale Beliebtheit und den Einfluss dieses Sports unterstreicht.</p>
+        
+        <p>Ein markantes Beispiel für diese Entwicklung ist die Expansion der Formel 1 in die USA, die in den letzten Jahren intensiv vorangetrieben wurde. Mit neuen Rennen wie dem Großen Preis von Miami und dem Großen Preis von Las Vegas wird deutlich, wie wichtig der nordamerikanische Markt für die Formel 1 geworden ist. Diese Globalisierung steht in direktem Zusammenhang mit den finanziellen Entwicklungen innerhalb des Sports.</p>
+    
+        <p>Die folgende Grafik zeigt die Anzahl der Rennen pro Dekade und illustriert den Anstieg der Rennanzahl, was auf die steigende Popularität und globale Expansion der Formel 1 hinweist:</p>
+        
+        <div style="text-align: left;">
+        <iframe src="plotly_races_per_decade.html" width="1300" height="850"></iframe>
+        </div>
+        
+        <p>Die Verteilung der Rennen auf verschiedenen Kontinenten zeigt, dass die Formel 1 eine internationale Sportart geworden ist. Rennstrecken in Nordamerika, Südamerika, Asien, Australien und dem Nahen Osten ergänzen die traditionellen europäischen Rennen und bieten Fans weltweit die Möglichkeit, die Rennen live zu verfolgen. Diese globale Präsenz hat nicht nur dazu beigetragen, die Fanbasis zu erweitern, sondern auch die wirtschaftlichen Möglichkeiten für den Sport zu vergrößern.</p>
+
+        <h2>Dominante Teams: Triumph und Technologie</h2>
+        <p>Ein weiteres faszinierendes Kapitel in der Geschichte der Formel 1 ist die Dominanz bestimmter Teams in verschiedenen Dekaden. Diese Dominanz wurde oft durch herausragende Fahrer und innovative Technik unterstützt. Die folgende Grafik illustriert die dominanten Teams pro Dekade und zeigt die Anzahl ihrer Siege in dieser Zeit:</p>
+        <div style="text-align: center;">
+            <img src="dominante_teams.png" alt="Dominante Teams pro Dekade in der Formel 1">
+        </div>
+        <h3>Dominante Teams pro Dekade</h3>
+        <ul>
+            <li>
+                <h3>1960er Jahre: Lotus</h3>
+                <p>Lotus dominierte mit 36 Siegen. Fahrer wie Jim Clark und innovative Designs prägten diese Ära.</p>
+                <p>1963 setzte Lotus mit dem Lotus 25 neue Maßstäbe. Jim Clark gewann sieben von zehn Rennen und überrundete beim Großen Preis der Niederlande jeden Konkurrenten. Lotus' Erfolg basierte auf Colin Chapmans bahnbrechenden Designs, die oft risikoreich, aber revolutionär waren.</p>
+            </li>
+            <li>
+                <h3>1970er Jahre: Ferrari</h3>
+                <p>Ferrari gewann 37 Rennen, unterstützt von Fahrern wie Niki Lauda und technischer Exzellenz.</p>
+                <p>In den 70ern führte Ferrari mit Niki Lauda und Jody Scheckter. Laudas Rückkehr nach seinem beinahe tödlichen Unfall 1976 und sein darauf folgender Titelgewinn 1977 sind legendäre Geschichten dieser Ära.</p>
+            </li>
+            <li>
+                <h3>1980er Jahre: McLaren</h3>
+                <p>McLaren führte mit 56 Siegen. Fahrer wie Alain Prost und Ayrton Senna trugen zur Dominanz bei.</p>
+                <p>1984 dominierten Niki Lauda und Alain Prost in ihren McLaren-TAGs die Saison und gewannen zwölf von 16 Rennen. Das Duell zwischen Lauda und Prost war episch, und Lauda sicherte sich den Titel mit einem halben Punkt Vorsprung. 1988, mit Honda-Power, gewann McLaren 15 von 16 Rennen, eine beispiellose Leistung.</p>
+            </li>
+            <li>
+                <h3>1990er Jahre: Williams</h3>
+                <p>Williams dominierte mit 73 Siegen, unterstützt von technologischen Innovationen und starken Fahrern wie Nigel Mansell.</p>
+                <p>Williams setzte in den 90ern auf fortschrittliche Technologien wie die aktive Federung. Nigel Mansell gewann 1992 neun Rennen und sicherte sich den Titel fünf Rennen vor Saisonende. Auch Fahrer wie Damon Hill und Jacques Villeneuve trugen zur Dominanz von Williams bei.</p>
+            </li>
+            <li>
+                <h3>2000er Jahre: Ferrari</h3>
+                <p>Ferrari kehrte mit 86 Siegen zurück. Michael Schumacher und technische Fortschritte sicherten den Erfolg.</p>
+                <p>Unter der Leitung von Jean Todt und Ross Brawn sowie mit Michael Schumacher als Starfahrer erlebte Ferrari eine der erfolgreichsten Phasen in der Geschichte der Formel 1. Von 2000 bis 2004 gewann Schumacher fünf aufeinanderfolgende Weltmeisterschaften und setzte zahlreiche Rekorde. Besonders 2004 dominierte Schumacher mit 13 Siegen in 18 Rennen.</p>
+            </li>
+            <li>
+                <h3>2010er Jahre: Mercedes</h3>
+                <p>Mercedes dominierte mit 111 Siegen. Die Hybrid-Ära und Fahrer wie Lewis Hamilton prägten diese Dekade.</p>
+                <p>Mit der Einführung der Hybrid-Ära 2014 begann Mercedes, die Formel 1 zu dominieren. Die Kombination aus einer überlegenen Power Unit und herausragenden Fahrern führte dazu, dass Mercedes zahlreiche Weltmeisterschaften und Konstrukteurstitel gewann. Lewis Hamilton und Nico Rosberg waren die treibenden Kräfte hinter diesem Erfolg. Besonders bemerkenswert war die Saison 2016, als Hamilton und Rosberg bis zum letzten Rennen um den Titel kämpften.</p>
+            </li>
+        </ul>
+        <p>Insgesamt zeigt die Geschichte der Formel 1, dass verschiedene Teams über die Jahrzehnte hinweg ihre Dominanz ausüben konnten, oft unterstützt durch herausragende Fahrer und innovative Technik. Ständige Regeländerungen und technologische Fortschritte trugen dazu bei, dass keine Dekade der vorherigen glich, was die Formel 1 zu einem stets spannenden und dynamischen Sport macht.</p>
+
+        <h2>Fazit</h2>
+        <p>Die Geschichte der Formel 1 zeigt eine bemerkenswerte Evolution in verschiedenen Bereichen. Von den sicherheitsrelevanten Fortschritten über die finanzielle Entwicklung bis hin zur globalen Expansion und der Dominanz bestimmter Teams – jede dieser Facetten hat dazu beigetragen, die Formel 1 zu dem faszinierenden und dynamischen Sport zu machen, der er heute ist. Diese Entwicklungen haben nicht nur die Sicherheit der Fahrer erhöht, sondern auch die Attraktivität und den wirtschaftlichen Erfolg der Formel 1 gesteigert, was sie zu einem globalen Phänomen gemacht hat.</p>
+    </div>
+    <footer>
+        <p>© Die Evolution der Formel 1 – Von den 1950er Jahren bis heute.</p>
+        <h3>Quellenverzeichnis</h3>
+        <ul>
+            <li>Die Formel 1 und die Sicherheit: 1950 bis heute: <a href="https://www.motorsport-magazin.com/formel1/news-202835-die-formel-1-und-die-sicherheit-1950-bis-heute/" target="_blank">Link</a></li>
+            <li>Formel 1: Entwicklung der Teambudgets – Der Fluch des Geldes: <a href="https://www.motorsport-magazin.com/formel1/news-268629-formel-1-entwicklung-der-teambudgets-der-fluch-des-geldes/" target="_blank">Link</a></li>
+            <li>Die größten Dominanzen der Formel 1-Geschichte: <a href="https://www.motorsport-magazin.com/formel1/news-225064-die-groessten-dominanzen-der-formel-1-geschichte/" target="_blank">Link</a></li>
+            <li>Sicherheit in der F1: Verbesserungen und Datenbank der Unfälle: <a href="https://www.auto-motor-und-sport.de/formel-1/sicherheit-f1-verbesserungen-datenbank-unfaelle/" target="_blank">Link</a></li>
+            <li>Formel 1 Historisches: <a href="https://www.motorsport-magazin.com/formel1/historisches.html" target="_blank">Link</a></li>
+            <li>Formel 1 Datenbank: Strecken: <a href="https://www.formel1.de/formel-1-datenbank/object.php?subject=track" target="_blank">Link</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
